@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MainButton, NavLink } from './styles.js';
+import bcrypt from 'bcryptjs'; 
 
 const Inscription = () => {
   const [nom, setNom] = useState('');
@@ -10,17 +11,21 @@ const Inscription = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (motDePasse !== verificationMotDePasse) {
       alert('Les mots de passe ne correspondent pas.');
       return;
     }
-
+  
+    
+    const saltRounds = 10;
+    const hashedPassword = await bcrypt.hash(motDePasse, saltRounds);
+  
     const data = {
       nom,
       prenom,
       email,
-      motDePasse,
+      motDePasse: hashedPassword, 
     };
 
     try {
