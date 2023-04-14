@@ -1,5 +1,9 @@
-git pull
-npm install 
-npm install react-router-dom
+cd..
+git pull 
+cd msprapp
+echo "Installation des modules"
+npm install express mysql body-parser
+npm install styled-components
 
-npm start 
+echo "Instalation terminée"
+npm start

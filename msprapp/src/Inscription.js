@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { MainButton, NavLink } from './styles.js';
 
 const Inscription = () => {
   const [nom, setNom] = useState('');
@@ -91,7 +92,8 @@ const Inscription = () => {
             onChange={(e) => setVerificationMotDePasse(e.target.value)}
           />
         </div>
-        <button type="submit">S'inscrire</button>
+        <MainButton>S'inscrire</MainButton>
+        <NavLink href="/">J'ai déjà un compte. Se connecter</NavLink>
       </form>
     </div>
   );

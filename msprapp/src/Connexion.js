@@ -1,6 +1,5 @@
-
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { MainButton, NavLink } from './styles.js';
 
 const Connexion = () => {
   const [email, setEmail] = useState('');
@@ -8,7 +7,7 @@ const Connexion = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // todo vérifier et envoyer identifiants api
+    // À faire : vérifier et envoyer les identifiants à l'API
   };
 
   return (
@@ -33,12 +32,12 @@ const Connexion = () => {
             onChange={(e) => setMotDePasse(e.target.value)}
           />
         </div>
-        <button type="submit">Se connecter</button>
+        <div>
+          <h1>Connexion</h1>
+          <MainButton>Se connecter</MainButton>
+          <NavLink href="/inscription">Pas encore inscrit ? Inscrivez-vous</NavLink>
+        </div>
       </form>
-      <p>
-        Vous n'avez pas de compte?{' '}
-        <Link to="/inscription">Créez un compte</Link>
-      </p>
     </div>
   );
 };
