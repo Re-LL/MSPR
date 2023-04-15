@@ -28,6 +28,8 @@ const Inscription = () => {
       motDePasse: hashedPassword, 
     };
 
+    console.log(JSON.stringify(data));
+
     try {
       const response = await fetch('https://mon-api-exemple.com/inscription', {
         method: 'POST',
