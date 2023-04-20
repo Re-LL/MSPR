@@ -1,3 +1,7 @@
+### Installation rapide 
+
+Lancer le .bash
+
 # Démarrage du projet
 Ce projet a été créé avec Create React App.
 
@@ -7,9 +11,7 @@ Git installé sur votre machine
 Expo CLI (pour les projets React Native)
 ## Étapes d'installation
 
-### Installation rapide 
 
-Lancer le .bash
 
 git clone <lien-du-dépôt>
 Clonez le dépôt Git en exécutant la commande ci-dessus dans votre terminal.
