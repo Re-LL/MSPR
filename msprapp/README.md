@@ -6,6 +6,11 @@ Node.js et NPM installés sur votre machine
 Git installé sur votre machine
 Expo CLI (pour les projets React Native)
 ## Étapes d'installation
+
+### Installation rapide 
+
+Lancer le .bash
+
 git clone <lien-du-dépôt>
 Clonez le dépôt Git en exécutant la commande ci-dessus dans votre terminal.
 
